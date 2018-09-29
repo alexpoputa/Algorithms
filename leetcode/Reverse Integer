@@ -4,7 +4,7 @@
  */
 
 var reverse = function(x) {
-    var rev = parseInt(x.toString().split('').reverse().join('')); // take the integer, convert it array followed by reverse of it and join the reversed array back to string followed by the parse of it 
+    var rev = parseInt(x.toString().split('').reverse().join('')); // take the integer, convert it to array,followed by the reverse of it and join back the reversed array to string,followed by the parse of the string 
    if(rev > 2147483648) { // if the reversed int is greater than 2^31
        return 0; 
    }else {
