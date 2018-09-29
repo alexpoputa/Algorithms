@@ -1,0 +1,13 @@
+/**
+ * @param {number} x
+ * @return {number}
+ */
+
+var reverse = function(x) {
+    var rev = parseInt(x.toString().split('').reverse().join(''));
+   if(rev > 2147483648) {
+       return 0;
+   }else {
+   return rev * Math.sign(x);
+   }
+ };
