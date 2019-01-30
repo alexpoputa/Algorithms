@@ -5,10 +5,11 @@ function LetterCapitalize(str) {
  var myArr = str.split(' ');
  // Create new empty array to store later the result
 var store = [];
- // for each word in first array
-myArr.forEach(function(dataX){
-    // Take the first letter from initial array,change it to Upper Case and add the rest of the word to it, then push it to the new empty array
-store.push(dataX.slice(0,1).toUpperCase() + dataX.slice(1));
+ // For each word in the first array
+myArr.forEach(function(firstLetter){
+    /* Take the first letter from initial array and change it to Upper Case 
+       Then slice it and add the rest of the word to it, then push it to the new empty array */
+store.push(firstLetter.slice(0,1).toUpperCase() + firstLetter.slice(1));
 })
 // Return the new array and join it back to a string
 return store.join(' ') 
