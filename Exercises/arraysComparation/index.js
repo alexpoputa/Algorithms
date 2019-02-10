@@ -16,9 +16,9 @@ function checkExam(array1, array2) {
      }else{
        score -= 1;
      }
-     if(score<0){
+ }
+ if(score<0){
        return 0;
-     }
  }
 return score;
 }
