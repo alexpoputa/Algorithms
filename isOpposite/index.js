@@ -1,9 +1,9 @@
 function isOpposite(s1,s2){
- // If s1 and s2 are empty string or the length of is not equal, return false;
+ // If s1 and s2 are empty strings or the length of them are not equal,return false;
  if( s1 == '' || s2 == '' || s1.length != s2.length ) return false;
   
-  var res = ''
-  for ( var index in s1 )
+  var res = '';
+  for ( var index in s1 ) {
     if ( s1[index].toUpperCase() == s1[index] ) {
     // Transform each uppercase chars from first string to lowercase
     res += s1[index].toLowerCase();
@@ -11,7 +11,9 @@ function isOpposite(s1,s2){
     // Else viceversa
     res += s1[index].toUpperCase();
     }
-  return s2 == res
+  }
+ // If s2 == res, where res is the opposite of s1, return true,o therwise return false
+  return s2 == res;
 }
 
 /* 
