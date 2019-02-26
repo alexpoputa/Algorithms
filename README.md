@@ -1,2 +1,2 @@
-# Bootcamp-Algorithms-Data-Strucutres
-Algorithms + Data Structures made through Udemy course
+# Algorithms-Data-Strucutres
+Algorithms + Data Structures
