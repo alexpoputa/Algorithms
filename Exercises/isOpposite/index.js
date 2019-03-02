@@ -12,7 +12,7 @@ function isOpposite(s1,s2){
     res += s1[index].toUpperCase();
     }
   }
- // If s2 == res, where res is the opposite of s1, return true,o therwise return false
+ // If s2 == res, where res is the opposite of s1, return true, otherwise return false
   return s2 == res;
 }
 
